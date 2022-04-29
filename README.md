@@ -2,6 +2,10 @@
 
 This repository is developed for the ASU project team Team 23, working on a Collision Preventive Wheelchair.
 
+## Watch the graphical demo
+
+https://youtu.be/E1hY-bqubA4
+
 To run the graphical demo, you must have a few things installed.
 
 ## Install dependencies (Raspbian/Debian/Ubuntu Linux)
