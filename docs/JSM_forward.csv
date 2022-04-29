@@ -1,0 +1,13 @@
+"Tektronix MDO3012, version v1.26, serial number C041415"
+"Bus Definition: CAN"
+ Time, Identifier, DLC, Data, CRC, Missing Ack, Error Info
+5.731460e-02, 2000100,  2,  03  28 ,  2681,  , EOF Error
+8.734800e-02, 2000100,  2,  03  28 ,  2681,  ,  
+9.184410e-02, Error Frame, , , , , 
+1.040557e-01, 1C300004,  8,  CE  D6  74  00  59  B9  03  00 ,  36C5,  ,  
+1.074924e-01, Error Frame, , , , , 
+1.174009e-01, 2000100,  2,  03  28 ,  2681,  ,  
+1.182430e-01, 3C30F0F,  7,  03  28  74  00  59  B9  03 ,  ,  ,  Bit Stuff Error
+1.274402e-01, Error Frame, , , , , 
+1.374135e-01, 2000100,  2,  03  28 ,  2681,  ,  
+1.417887e-01, Error Frame, , , , , 

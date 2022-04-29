@@ -1,0 +1,33 @@
+@startuml
+title EEE 489 Team 23 Prototype collision avoidance system
+
+node "Raspberry Pi" as raspi {
+  node "Application" as app {
+    control "handle CAN frames\npoll sensors\nemit user feedback"
+  }
+}
+node "CAN HAT: Copperhill Tech Dual CAN" as canhat {
+  node "CAN #0" as can0
+  node "CAN #1" as can1
+}
+
+node "Sensor module" as sens {
+
+}
+
+node "Feedback module" as feed {
+
+}
+raspi <-left-> canhat: SPI
+raspi -down-> sens: GPIO
+raspi -down-> feed: GPIO
+
+node "Powerchair: Permobil M300" as chair {
+  node "Joystick (JSM)" as jsm
+  node "Control unit" as bus
+}
+
+jsm <--> can0: CAN frames\n(unmodified,\nbiridectional)
+can1 <--> bus: CAN frames\n(modified and unmodified,\nbidirectional)
+
+@enduml
